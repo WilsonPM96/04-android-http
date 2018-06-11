@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "1016460756646",
+    "firebase_url": "https://wr-moviles-camara.firebaseio.com",
+    "project_id": "wr-moviles-camara",
+    "storage_bucket": "wr-moviles-camara.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1016460756646:android:56d32b002d711d74",
+        "android_client_info": {
+          "package_name": "com.example.usrdel.aplicationmov"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1016460756646-4jega73dbde3ib0lvsgnhjgdl4v7beoh.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "1016460756646-4jega73dbde3ib0lvsgnhjgdl4v7beoh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlvZgThSktTF2xE69TfRI7AyJsQoHf9Z0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
