@@ -3,4 +3,7 @@
     <external-path
     name="my_images"
     path="Android/data/com.example.usrdel.aplicationmov/files/Pictures" />
+    <files-path
+        name="my_images"
+        path="data/com.example.usrdel.aplicationmov/files/Pictures" />
 </paths>

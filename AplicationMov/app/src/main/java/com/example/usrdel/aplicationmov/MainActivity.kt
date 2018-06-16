@@ -8,6 +8,8 @@ import android.view.View
 import com.beust.klaxon.Klaxon
 import com.github.kittinunf.fuel.httpGet
 import com.github.kittinunf.result.Result
+import com.onesignal.OneSignal
+import com.tapadoo.alerter.Alerter
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
 
@@ -15,9 +17,21 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        OneSignal.startInit(this)
+                .inFocusDisplaying(OneSignal.OSInFocusDisplayOption.Notification)
+                .unsubscribeWhenNotificationsAreDisabled(true)
+                .init();
+        Alerter.create(this@MainActivity)
+                .setTitle("Hola")
+                .setText("Amigos como estan...")
+                .show()
         setContentView(R.layout.activity_main)
         button_camara.setOnClickListener{view: View ->
             iraActividadCamara()
+        }
+
+        button_mapa.setOnClickListener{view: View ->
+            iraActividadMapa()
         }
         "http://172.31.104.12:1337/Entrenador/1"
                 .httpGet()
@@ -87,6 +101,11 @@ class MainActivity : AppCompatActivity() {
     }
     fun iraActividadCamara() {
         val intent = Intent(this, CamaraActivity::class.java)
+        startActivity(intent)
+    }
+
+    fun iraActividadMapa() {
+        val intent = Intent(this, GoogleMapsActivity::class.java)
         startActivity(intent)
     }
 }
