@@ -12,6 +12,7 @@ import com.onesignal.OneSignal
 import com.tapadoo.alerter.Alerter
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
+import org.jetbrains.anko.intentFor
 
 class MainActivity : AppCompatActivity() {
 
@@ -32,6 +33,10 @@ class MainActivity : AppCompatActivity() {
 
         button_mapa.setOnClickListener{view: View ->
             iraActividadMapa()
+        }
+
+        button_anko.setOnClickListener{view: View ->
+            iraActividadAnko()
         }
         "http://172.31.104.12:1337/Entrenador/1"
                 .httpGet()
@@ -107,5 +112,9 @@ class MainActivity : AppCompatActivity() {
     fun iraActividadMapa() {
         val intent = Intent(this, GoogleMapsActivity::class.java)
         startActivity(intent)
+    }
+
+    fun iraActividadAnko(){
+        startActivity(intentFor<AnkoActivity>())
     }
 }

@@ -34,4 +34,17 @@
         app:layout_constraintStart_toStartOf="@+id/button_camara"
         app:layout_constraintTop_toBottomOf="@+id/button_camara" />
 
+    <Button
+        android:id="@+id/button_anko"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Anko"
+        app:layout_constraintBottom_toTopOf="@+id/button_camara"
+        app:layout_constraintEnd_toEndOf="@+id/button_camara"
+        app:layout_constraintStart_toStartOf="@+id/button_camara"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </android.support.constraint.ConstraintLayout>
